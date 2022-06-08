@@ -6,8 +6,19 @@ const Contact = () => {
     <div>
       Contact
       <h1>I reside in Raleigh, NC</h1>
-      <p>
+      <h2>
         <ul>
+          <li>
+            LinkedIn:
+            <a
+              href="https://www.linkedin.com/in/markhealy2016/"
+              title="I'm on LinkedIn."
+              target="_blank"
+              rel="noreferrer"
+            >
+              markhealy2016
+            </a>
+          </li>
           <li>
             Phone:
             <a
@@ -64,7 +75,7 @@ const Contact = () => {
             </a>
           </li>
         </ul>
-      </p>
+      </h2>
     </div>
   );
 };
