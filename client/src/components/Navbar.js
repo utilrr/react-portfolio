@@ -7,7 +7,7 @@ import Button from "@mui/material/Button";
 const Navbar = () => {
   return (
     <>
-      <h1>MJH</h1>
+      <h1>Mark Healy | Web Developer</h1>
 
       <ul>
         <Stack spacing={5} direction="row">
