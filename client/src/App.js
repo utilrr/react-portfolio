@@ -1,5 +1,7 @@
 import React from "react";
 import "./App.css";
+import Container from "@mui/material/Container";
+import Grid from "@mui/material/Grid";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
@@ -12,14 +14,18 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Navbar />
-
+        <Container>
+          <Grid container spacing={2}>
+            <Navbar />
+          </Grid>
+        </Container>
         <Routes>
           <Route path="/" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/resume" element={<Resume />} />
         </Routes>
+
         <Footer />
       </Router>
     </div>
